@@ -1,0 +1,71 @@
+# Sintaxe Básica e Estrutura do CSS
+
+## Sintaxe Básica
+A sintaxe básica do CSS é composta por:
+
+- **Seletores**: Representam um elemento ou grupo de elementos HTML (pode ser o próprio elemento, um atributo ID ou um atributo CLASS)
+- **Propriedades**: São os atributos-chave do CSS (exemplo: `color`)
+- **Valores**: São os valores atribuídos às propriedades (exemplo: para a propriedade `color`, o valor pode ser `yellow`)
+
+## Formas de Incluir CSS
+
+### 1. Inline
+É aplicado diretamente dentro do elemento HTML como um atributo:
+```html
+<p style="color: blue">Teste</p>
+```
+
+### 2. Interno
+É declarado dentro do elemento `<head>` do HTML:
+```html
+<head>
+  <style>
+    p { color: blue; }
+  </style>
+</head>
+```
+*Observação*: Útil para estilos específicos de uma única página, mas não é reutilizável.
+
+### 3. Externo
+Arquivo `.css` separado, vinculado via `<link>`:
+```html
+<head>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+```
+*Vantagens*:
+- Facilita a manutenção
+- Melhora a performance (o arquivo CSS fica em cache)
+
+## Conceitos Fundamentais
+
+### Cascata e Especificidade
+
+**Cascata**: Define a ordem de aplicação dos estilos (de cima para baixo)
+
+**Especificidade**: Determina qual regra prevalece em caso de conflito
+
+### Hierarquia de Especificidade
+
+1. **`!important`** (maior prioridade)
+   ```css
+   div { color: blue !important; }
+   div { color: pink; } /* Será ignorado */
+   ```
+
+2. **Style Inline**
+   ```html
+   <p style="color:yellow;">TEXTO</p>
+   ```
+   *Observação*: Sobrepõe regras CSS externas (exceto quando usam `!important`)
+
+3. **Seletores por ID**
+
+4. **Seletores por CLASSE e por ATRIBUTOS HTML** (atributos ≠ elementos)
+
+5. **Elementos HTML**
+
+*Conclusão*: Quanto mais específica a regra, maior sua importância na hierarquia.
+
+### Herança no CSS
+Algumas propriedades CSS são automaticamente herdadas de elementos pais para seus filhos na estrutura do DOM.

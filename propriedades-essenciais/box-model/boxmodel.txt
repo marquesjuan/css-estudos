@@ -1,0 +1,11 @@
+BOX MODEL:
+
+Conteúdo (content) - é o conteúdo do elemento
+Preenchimento (padding) - é o espaço entre o conteúdo e a borda
+Borda (border) - é a borda que envolve o padding e o conteúdo
+Margem (margin) - espaço externo ao conteúdo, separa um elemento do outro
+
+Atributo box-sizing:
+
+box-sizing: content-box -> é a configuração padrão dos elementos, consiste que ao definir a largura (width) e a altura (height) , essas medidas serão válidas apenas para o conteúdo.
+box-sizing: border-box -> [...] , essas medidas serão válidas até a borda, ou seja, ao definir uma largura e uma altura, essa definição vai incluir o padding e o border.

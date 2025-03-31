@@ -1,0 +1,33 @@
+.caixa{
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid #333;
+    margin: 30px;
+    background-color: #f0f0f0;
+    box-sizing:border-box;
+}
+
+/*
+    Representa a largura e a altura do CONTEÚDO
+    Width: 200px
+    height 200px
+
+    Preenchimento, ou seja um aumento de "volume" entre o conteudo e a margin
+    padding: 20px
+
+    border
+    border: 5px
+
+    margin, representa o espaço entre o padding ou o conteudo, ate os outros elementos
+
+    
+    Qual é a largura total do elemento na página (incluindo todas as partes do box model)?
+    R: 410px
+
+    Qual é a altura total do elemento na página?
+    R. 310px
+
+    Se adicionarmos box-sizing: border-box à regra CSS, como mudam as respostas anteriores?
+    R.  width e height incluem o padding e border
+    */
